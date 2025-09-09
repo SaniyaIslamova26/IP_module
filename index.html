@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Опрос</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="style2.0.css">
+        <link rel="icon" href="C:\Users\4eka0\Downloads\i.ico" type="image/x-icon">
+        
+    </head>
+    <body>
+        <img src="https://avatars.mds.yandex.net/i?id=04ac954489d58b7bbe522eac1b7f87aedb416583-7025773-images-thumbs&n=13" align="left" width="200" height="200">
+        <h3 align="center">Опрос после изучения материалов "Базы знаний" на сайте ЦНИИ "Электроника"</h3>
+        <p align="center">Данный опрос направлен на получение обратной связи от тех, кто прошёл курс, 
+            или просмотрел видеолекцию по одной из тематик,
+            или ознакомился с актуальными аналитическими исследованиями,
+            для улучшения качества и разнообразия интересующих тем "Базы знаний".
+        Опрос не займёт более 10 минут</p>
+        
+        <form action="index.html" method="post">
+             
+            <label for="name">Имя</label>
+            <input type="text" id="Имя" name="student_name">
+            <label for="name">Фамилия</label>
+            <input type="text" id="Фамилия" name="student_surname">
+            <label for="name">Дата рождения</label>
+            <input type="date" id="Дата рождения" name="student_HB">
+            <label for="name">Электронная почта</label>
+            <input type="email" id="Введите адрес вашей почты" name="student_email">
+            <label>Деятельность</label>
+          <input type="radio" id="student" value="student" name="user_activity"><label for="student" class="light">Учащийся (школа,колледж,вуз)</label><br>
+          <input type="radio" id="employee" value="employee" name="user_activity"><label for="employee" class="light">Работник</label>
+          <label for="name">Сфера деятельности</label>
+          <input type="text" id="Сфера деятельности" name="field of activity">
+          <label>Вы прошли курс "Основы технологического предпринимательства"?</label>
+          <input type="radio" id="Да,полностью" value="Да,полностью" name="Да,полностью"><label class="light" for="Да,полностью">Да, полностью</label><br>
+          <input type="radio" id="Пройдено больше половины" value="Пройдено больше половины" name="Пройдено больше половины"><label class="light" for="Пройдено больше половины">Пройдено больше половины</label><br>
+          <input type="radio" id="Пройдено меньше половины" value="Пройдено меньше половины" name="Пройдено меньше половины"><label class="light" for="Пройдено меньше половины">Пройдено меньше половины</label><br>
+          <input type="radio" id="Нет" value="Нет" name="Нет"><label class="light" for="Нет">Нет</label>
+          <label for="name">Поделитесь впечатлениями о курсе</label>
+            <textarea id="Комментарий" name="Комментарий"></textarea>
+            <label>Вы просмотрели видеолекцию на одну из тематик?</label>
+            <input type="radio" id="Да" value="Да" name="Да"><label class="light" for="Да">Да</label><br>
+            <input type="radio" id="Нет" value="Нет" name="Нет"><label class="light" for="Нет">Нет</label>
+            <label for="courses">Выберите видеолекцию</label>
+                <select id="видеолекция" name="темы видеолекций">
+                    <option>Не смотрел(а) видеолекции</option>
+                    <option>Смотрел(а) несколько виделекций</option>
+                    <option>Метод дизайн-мышления</option>
+                    <option>Анализ высокотехнологичных рынков</option>
+                    <option>Формирование бизнес-планов проектов</option>
+                    <option>Инновации для корпораций. Внедрение стартапов в бизнес-процессы крупных компаний </option>
+                    <option>Презентации со смыслом</option>
+                    <option>Практические кейсы о провалах в бизнесе и «выученных уроках»</option>
+                    <option>Безопасность в мире интернета вещей</option>
+                    <option>Рынок и технологии data science </option>
+                    <option>Будущее, которое уже наступило </option>
+                    <option>Бизнес-планирование</option>
+                    <option>Как защитить себя и свой бизнес</option>
+                </select>
+            <label for="name">Поделитесь впечатлениями от видеолекций</label>
+            <textarea id="Комментарий" name="Комментарий"></textarea>
+                    <label>Вы ознакомились с актуальными аналитическими исследованиями?</label>
+                    <input type="radio" id="Да" value="Да" name="Да"><label class="light" for="Да">Да</label><br>
+                    <input type="radio" id="Нет" value="Нет" name="Нет"><label class="light" for="Нет">Нет</label>
+            <label for="name">Поделитесь впечатлениями о научных работах. Какие темы для вас актуальны?</label>
+            <textarea id="Комментарий" name="Комментарий"></textarea>
+            <label>Как вы оцените материалы "Базы знаний" в целом?</label>
+            <input type="radio" id="Никак" value="Никак" name="Никак"><label class="light" for="Никак">Никак. Очень слабо/плохо</label><br>
+                    <input type="radio" id="Ниже среднего" value="Ниже среднего" name="Ниже среднего"><label class="light" for="Ниже среднего">Ниже среднего</label><br>
+                    <input type="radio" id="Средне" value="Средне" name="Средне"><label class="light" for="Средне">Средне</label><br>
+                    <input type="radio" id="Выше среднего" value="Выше среднего" name="Выше среднего"><label class="light" for="Выше среднего">Выше среднего</label><br>
+                    <input type="radio" id="Отлично" value="Отлично" name="Отлично"><label class="light" for="Отлично">Отлично. Очень познавательно</label>
+            <label for="name">Почему вы так оценили?</label>
+            <textarea id="Комментарий" name="Комментарий"></textarea>
+
+            <label for="name">Что бы вы добавили еще?</label>
+            <textarea id="Комментарий" name="Комментарий"></textarea>
+            
+            <label>Подписаться на рассылку о новых материалах "Базы знаний"</label>
+          <input type="checkbox" id="Нет" value="Нет" name="Нет"><label class="light" for="Нет">Нет</label><br>
+          <input type="checkbox" id="Да" value="Да" name="Да"><label class="light" for="Да">Да</label><br>
+          
+
+            <button type="submit">Отправить отзыв</button>
+
+    </body>
+</html>
